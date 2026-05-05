@@ -6,12 +6,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: Baixar código
-      uses: actions/checkout@v3
-    
-    - name: Build da imagem Docker
-      run: docker build -t meu-site .
-    
-    - name: Rodar container
-      run: docker run -d -p 8080:80 meu-site
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v3
+      
+      - name: Build da imagem Docker
+        run: docker build -t meu-site .
+      
+      - name: Rodar container
+        run: docker run -d -p 8080:80 meu-site
