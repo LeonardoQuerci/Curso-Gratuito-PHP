@@ -1,8 +1,9 @@
 pipeline {
-    agent any
+    agent {
+            docker { image 'docker:latest' }
+        }
 
     stages {
-
         stage('Clonar Projeto') {
             steps {
                 git branch: 'main', url: 'https://github.com/LeonardoQuerci/Curso-Gratuito-PHP.git'            }
