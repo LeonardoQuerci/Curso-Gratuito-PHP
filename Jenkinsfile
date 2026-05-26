@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clonar Projeto') {
             steps {
-                git 'https://github.com/seu-usuario/seu-repositorio.git'
+                git 'https://github.com/LeonardoQuerci/Curso-Gratuito-PHP.git'
             }
         }
 
