@@ -21,7 +21,7 @@ pipeline {
 
         stage('Subir Novo Container') {
             steps {
-                sh 'docker run -d -p 8081:80 --name site-social site-social'
+                sh 'docker run -d -p 8080:80 --name site-social site-social'
             }
         }
 
