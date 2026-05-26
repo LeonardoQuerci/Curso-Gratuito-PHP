@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clonar Projeto') {
-            steps {
-                git branch: 'main', url: 'https://github.com/LeonardoQuerci/Curso-Gratuito-PHP.git'            }
-        }
-
         stage('Build Docker') {
             steps {
                 sh 'docker build -t site-social .'
