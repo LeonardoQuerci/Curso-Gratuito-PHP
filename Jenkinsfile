@@ -5,8 +5,7 @@ pipeline {
 
         stage('Clonar Projeto') {
             steps {
-                git 'https://github.com/LeonardoQuerci/Curso-Gratuito-PHP.git'
-            }
+                git branch: 'main', url: 'https://github.com/LeonardoQuerci/Curso-Gratuito-PHP.git'            }
         }
 
         stage('Build Docker') {
